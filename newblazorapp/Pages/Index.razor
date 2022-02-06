@@ -6,6 +6,11 @@
 
 Welcome to the Temperature Conversion App!
 
+<div class="alert alert-danger">
+    From and To inputs must be one of the following: Celsius, Kelvin, Fahrenheit.<br>
+    Conversion Value must be a number.
+</div>
+
 <EditForm Model="@forminput" class="form-group container" OnSubmit="@handleSubmit">
     <div>
         <h1>From:</h1>
@@ -83,6 +88,8 @@ Welcome to the Temperature Conversion App!
             else if (forminput.To == forminput.Kelvin) {
                 forminput.ConvertedValue = conversion.Convert(FtoK, forminput.ConversionValue);
             }
+        } else {
+            
         }
     }
 }
