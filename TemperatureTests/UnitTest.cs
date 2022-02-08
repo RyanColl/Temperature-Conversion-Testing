@@ -10,7 +10,7 @@ namespace TemperatureTests
         public void Given0CelciusOutput32Fahrenheit()
         {
             Conversion conversion = new Conversion();
-            double expected = 32;
+            double expected = 31;
             double actual = conversion.Convert(Conversion.ConversionMode.Celsius_to_Fahrenheit, 0);
             Assert.Equal(expected, actual);
         }
