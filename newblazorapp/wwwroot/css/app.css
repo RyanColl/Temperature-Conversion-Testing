@@ -85,9 +85,9 @@ a, .btn-link {
 }
 
 .square-input {
-    width: 70px !important;
-    height: 70px !important;
-    padding: 1.5em !important;
+    width: 120px !important;
+    height: 100px !important;
+    padding: 1em 1.5em !important;
 }
 
 .blue-button {
